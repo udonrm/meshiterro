@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2023_04_15_085856) do
+=======
+ActiveRecord::Schema.define(version: 2023_04_15_050252) do
+>>>>>>> 8e901bec73bf4aa14face0bf6374e0afe90028fc
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -39,6 +43,7 @@ ActiveRecord::Schema.define(version: 2023_04_15_085856) do
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
+<<<<<<< HEAD
 
   create_table "post_images", force: :cascade do |t|
     t.string "shop_name"
@@ -47,6 +52,8 @@ ActiveRecord::Schema.define(version: 2023_04_15_085856) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+=======
+>>>>>>> 8e901bec73bf4aa14face0bf6374e0afe90028fc
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
